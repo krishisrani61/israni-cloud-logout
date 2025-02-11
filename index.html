@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signing Out - Israni Cloud</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://cloud.isranicloud.com/public.php/dav/files/g5siA8Ljp3p7kfg/Nextcloud.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        // Preload the logo
+        const preloadImage = new Image();
+        preloadImage.src = 'https://cloud.isranicloud.com/public.php/dav/files/g5siA8Ljp3p7kfg/noBgWhite.png';
+
+        // Redirect after 4-8 seconds
+        setTimeout(() => {
+            window.location.href = 'https://cloud.isranicloud.com';
+        }, Math.random() * (8000 - 4000) + 4000); // Random between 4-8 seconds
+    </script>
+</head>
+<body>
+    <div class="content">
+        <img src="https://cloud.isranicloud.com/public.php/dav/files/g5siA8Ljp3p7kfg/noBgWhite.png" alt="Israni Cloud Logo" class="logo">
+        <h1>Please Wait</h1>
+        <p>You are being signed out. It's a good idea to close all of your Israni Cloud tabs.</p>
+    </div>
+</body>
+</html>
